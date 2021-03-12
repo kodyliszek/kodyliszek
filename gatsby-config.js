@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/kodyliszek',
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,

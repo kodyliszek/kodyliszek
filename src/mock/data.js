@@ -9,10 +9,10 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  title: 'This is a liar of',
+  name: 'Kodyliszek',
+  subtitle: 'Cunning beast of World Wild Web.',
+  cta: 'Enter, if You dare !',
 };
 
 // ABOUT DATA
@@ -59,36 +59,36 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'kodyliszek@gmail.com',
 };
 
 // FOOTER DATA
 export const footerData = {
   networks: [
-    {
-      id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
+    // {
+    //   id: nanoid(),
+    //   name: 'twitter',
+    //   url: '',
+    // },
+    // {
+    //   id: nanoid(),
+    //   name: 'codepen',
+    //   url: '',
+    // },
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/company/kodyliszek/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/kodyliszek/',
     },
   ],
 };
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
