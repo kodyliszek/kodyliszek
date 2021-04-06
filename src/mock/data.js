@@ -9,7 +9,7 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: 'This is a liar of',
+  title: 'This is a lair of',
   name: 'Kodyliszek',
   subtitle: 'Cunning beast of World Wild Web.',
   cta: 'Enter, if You dare !',
