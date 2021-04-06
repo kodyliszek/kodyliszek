@@ -38,10 +38,18 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
-          </a>
+          <div>
+            © {new Date().getFullYear()} - Created by{' '}
+            <a href="https://kodyliszek.netlify.app/" target="_blank" rel="noopener noreferrer">
+              Kodyliszek
+            </a>
+          </div>
+          <div>
+            © {new Date().getFullYear()} - Template by{' '}
+            <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
+              Jacobo Martínez
+            </a>
+          </div>
         </p>
 
         {isEnabled && <GithubButtons />}

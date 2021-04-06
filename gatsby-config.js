@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `Kodyliszek Lair`,
+        short_name: `Kodyiszek`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#02aab0`,
