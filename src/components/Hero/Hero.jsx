@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -10,6 +11,8 @@ const Header = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -24,6 +27,7 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
+      <h1>{t('Welcome to React')}</h1>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             {title} <span className="text-color-main">{name}</span>
