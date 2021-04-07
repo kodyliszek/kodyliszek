@@ -1,43 +1,31 @@
-import React, { useState } from "react"
-import { useTranslation } from "react-i18next"
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Dropdown } from 'react-bootstrap';
 
+const LanguageMenu = () => {
+  const { i18n } = useTranslation();
 
-const LanguageMenu = (props) => {
-  const { t, i18n } = useTranslation()
-  
-  const [values, setValues] = useState({
-    language: 'en'
+  const values = useState({
+    language: 'en',
   });
 
-  function handleChange(event) {
-    i18n.changeLanguage(event.target.value)
-
-    setValues(oldValues => ({
-      ...oldValues,
-      [event.target.name]: event.target.value,
-    }));
-  }
-
-  const handleSelect = eventKey => {
+  const handleSelect = (eventKey) => {
     i18n.changeLanguage(eventKey);
     values.language = eventKey;
-    console.log(values);
+  };
 
-  }
-
-  return(
+  return (
     <Dropdown id="language" onSelect={handleSelect}>
-    <Dropdown.Toggle value={values.language} variant="white" id="dropdown-basic">
+      <Dropdown.Toggle value={values.language} variant="white" id="dropdown-basic">
         {values.language}
-    </Dropdown.Toggle>
+      </Dropdown.Toggle>
 
-    <Dropdown.Menu>
+      <Dropdown.Menu>
         <Dropdown.Item eventKey="en">en</Dropdown.Item>
         <Dropdown.Item eventKey="fr">fr</Dropdown.Item>
-    </Dropdown.Menu>
+      </Dropdown.Menu>
     </Dropdown>
-  )
-}
+  );
+};
 
-export default LanguageMenu
+export default LanguageMenu;
