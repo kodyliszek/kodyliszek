@@ -5,7 +5,7 @@ import { Dropdown } from 'react-bootstrap';
 const LanguageMenu = () => {
   const { i18n } = useTranslation();
 
-  const values = useState({
+  const [values] = useState({
     language: 'en',
   });
 
