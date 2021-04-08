@@ -6,12 +6,12 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
-      'Welcome to React': 'Welcome to React and react-i18next',
+      test: 'Welcome to React and react-i18next',
     },
   },
-  fr: {
+  pl: {
     translation: {
-      'Welcome to React': 'Bienvenue à React et react-i18next',
+      test: 'Witamy w Reakcie i react-i18next',
     },
   },
 };

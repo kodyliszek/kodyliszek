@@ -15,16 +15,18 @@ const LanguageMenu = () => {
   };
 
   return (
-    <Dropdown id="language" onSelect={handleSelect}>
-      <Dropdown.Toggle value={values.language} variant="white" id="dropdown-basic">
-        {values.language}
-      </Dropdown.Toggle>
+    <section id="language">
+      <Dropdown onSelect={handleSelect}>
+        <Dropdown.Toggle value={values.language} variant="white" id="dropdown-basic">
+          {values.language}
+        </Dropdown.Toggle>
 
-      <Dropdown.Menu>
-        <Dropdown.Item eventKey="en">en</Dropdown.Item>
-        <Dropdown.Item eventKey="fr">fr</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+        <Dropdown.Menu>
+          <Dropdown.Item eventKey="en">en</Dropdown.Item>
+          <Dropdown.Item eventKey="pl">pl</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+    </section>
   );
 };
 
